@@ -1,0 +1,19 @@
+name: Particle.io Action
+author: Jeremiah Harlan <jeremiah@particle.io>
+branding:
+  icon: upload-cloud
+  color: blue
+description: Run Particle.io cloud operations against codebase and devices
+inputs:
+  access_token:
+    description: The Particle user access token
+    required: true
+  device_type:
+    description: The device type being flashed
+    required: true
+  device_id:
+    description: The device ID or name
+    required: true
+runs:
+  using: docker
+  image: Dockerfile
