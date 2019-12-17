@@ -7,7 +7,6 @@ function main() {
   sanitize "${INPUT_DEVICE_ID}" "device_id"
   login
   compile
-  flash
 }
 
 function sanitize() {
@@ -25,11 +24,6 @@ function login() {
 function compile() {
   echo "Compiling..."
   particle compile $INPUT_DEVICE_TYPE --saveTo firmware.bin
-}
-
-function flash() {
-  echo "Flashing..."
-  particle flash ${INPUT_DEVICE_ID} firmware.bin
 }
 
 main

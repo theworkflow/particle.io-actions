@@ -12,7 +12,7 @@ This Action allows you to run Particle.io cloud operations against codebase and 
 ## Usage
 ```yaml
 jobs:
-  compile-and-flash:
+  compile:
     runs-on: ubuntu-latest
     steps:
     - uses: theworkflow/particle.io-actions@master

@@ -9,7 +9,7 @@ inputs:
     description: The Particle user access token
     required: true
   device_type:
-    description: The device type being flashed
+    description: The device type for code to be compiled for
     required: true
   device_id:
     description: The device ID or name
